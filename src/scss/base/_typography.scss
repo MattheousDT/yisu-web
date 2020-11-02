@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400;1,600&display=swap");
+@import "./variables";
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: $black;
+}
+
+:global h1,
+:global h2,
+:global h3,
+:global h4,
+:global h5,
+:global h6,
+:global p {
+  margin: 0;
+}
+
+:global h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+:global h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+:global p {
+  font-weight: 400;
+  line-height: 140%;
+  font-size: 16px;
+
+  &.large {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}

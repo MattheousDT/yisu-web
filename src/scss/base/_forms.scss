@@ -1,0 +1,44 @@
+@import "./variables";
+
+form {
+  button[type="submit"] {
+    margin-top: $extra-padding * 2;
+
+    @include focusShadow($red);
+  }
+}
+
+.yisu-text-field {
+  position: relative;
+  input {
+    background-color: $light-accent;
+    border: 2px solid $light-border;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: $extra-padding $padding $less-padding;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+
+    @include focusShadow($light-border);
+
+    &:invalid {
+      border-color: $red;
+    }
+  }
+  label {
+    position: absolute;
+    left: $padding;
+    top: $less-padding;
+    pointer-events: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    color: $red;
+  }
+}

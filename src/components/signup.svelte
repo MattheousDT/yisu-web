@@ -12,8 +12,10 @@
     if (!email.validity.valid) return (email.required = true);
     e.currentTarget.reportValidity();
 
-    let form = new GoogleForm(process.env.FORM_ADDRESS);
-    form.addField(process.env.FORM_FIELD, email.value);
+    let form = new GoogleForm(
+      "https://docs.google.com/forms/d/e/1FAIpQLScGf-bzAIoTnv10eXwPAPIPxiM8_nWl8TJsDGGKNZpkvhoHMQ"
+    );
+    form.addField("entry.889115910", email.value);
 
     try {
       error = false;

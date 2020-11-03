@@ -10,6 +10,7 @@ form {
 
 .yisu-text-field {
   position: relative;
+
   input {
     background-color: $light-accent;
     border: 2px solid $light-border;
@@ -30,6 +31,7 @@ form {
       border-color: $red;
     }
   }
+
   label {
     position: absolute;
     left: $padding;
@@ -40,5 +42,10 @@ form {
     font-weight: 600;
     font-style: italic;
     color: $red;
+  }
+
+  &__error {
+    color: $red;
+    font-weight: 500;
   }
 }

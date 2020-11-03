@@ -7,25 +7,31 @@
 </style>
 
 <svelte:head>
-  <title>Register for beta access | yisu!</title>
+  <title>yisu! Early Access</title>
 </svelte:head>
 
 <div class="container">
+  <article class="row promo promo__header">
+    <div class="col-12">
+      <img src="/img/logo.svg" alt="Yisu! logo" />
+      <h3>The next generation language learning app</h3>
+    </div>
+  </article>
   <article class="row promo">
-    <div class="col-5">
+    <div class="col-12 col-lg-6 col-xl-5">
       <div class="promo__text promo__text--left">
         <h1>App Onboarding</h1>
         <h2 class="translation">入職</h2>
         <p class="large">
           Available in both light and dark mode, Yisu will invite you into the
           app by allowing you to log in with your email or by using Google and
-          Apple
+          Apple.
         </p>
       </div>
     </div>
-    <div class="col-7 promo__onboarding">
+    <div class="col-12 col-lg-6 col-xl-7 promo__onboarding">
       <img
-        src="/onboarding.png"
+        src="/img/onboarding.png"
         alt="Yisu mobile login page displayed in light and dark mode" />
     </div>
   </article>
@@ -44,20 +50,19 @@
     </div>
     <div class="col-12">
       <div class="row promo__lessons">
-        <img src="/topic.png" alt="Yisu topic page, teaching Greetings" />
-        <img src="/topic.png" alt="Yisu topic page, teaching Greetings" />
-        <img src="/topic.png" alt="Yisu topic page, teaching Greetings" />
-        <img src="/topic.png" alt="Yisu topic page, teaching Greetings" />
+        <img src="/img/topic.png" alt="Yisu topic page, teaching Greetings" />
+        <img src="/img/word.png" alt="Yisu word page" />
+        <img src="/img/word2.png" alt="Yisu alternative word page" />
       </div>
     </div>
   </article>
   <article class="row promo">
-    <div class="col-7 promo__activities">
+    <div class="col-12 col-lg-6 col-xl-7 promo__activities">
       <img
-        src="/activities.png"
+        src="/img/activities.png"
         alt="Yisu mobile login page displayed in light and dark mode" />
     </div>
-    <div class="col-5">
+    <div class="col-12 col-lg-6 col-xl-5">
       <div class="promo__text promo__text--right">
         <h1>Activities</h1>
         <h2 class="translation">活動</h2>
@@ -68,6 +73,24 @@
           the language.
         </p>
       </div>
+    </div>
+  </article>
+  <article class="row promo">
+    <div class="col-12 col-lg-6 col-xl-5">
+      <div class="promo__text promo__text--left">
+        <h1>Community</h1>
+        <h2 class="translation">社區</h2>
+        <p class="large">
+          Learn, share and discuss on the yisu! community tab. Chat more about
+          topics, show off things you’re trying out while learning the language
+          or get help with anything you’re struggling with.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-7 promo__community">
+      <img
+        src="/img/community.png"
+        alt="Yisu mobile login page displayed in light and dark mode" />
     </div>
   </article>
 </div>

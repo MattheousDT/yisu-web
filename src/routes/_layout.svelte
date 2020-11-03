@@ -15,6 +15,10 @@
   :global *::after {
     box-sizing: border-box;
   }
+
+  main {
+    overflow: hidden;
+  }
 </style>
 
 <main>

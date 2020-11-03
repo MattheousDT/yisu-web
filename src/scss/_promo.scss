@@ -1,9 +1,25 @@
-@import "./base/typography";
 @import "./base/variables";
+@import "./base/grid";
 
 .promo {
   align-items: center;
   margin-bottom: 170px;
+
+  &__header {
+    margin-top: $extra-padding * 3;
+
+    img {
+      display: block;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      margin: $padding auto 0;
+      text-align: center;
+      color: $light-border;
+    }
+  }
 
   &__text {
     position: relative;
@@ -16,16 +32,21 @@
       font-weight: bold;
       font-size: 196px;
       position: absolute;
-      color: $blue;
+      color: transparent;
       z-index: -1;
       -webkit-text-stroke: 1px rgba($white, 0.2);
+
+      @include media-breakpoint-down(sm) {
+        font-size: 120px;
+      }
     }
 
     p {
       color: white;
     }
 
-    &--left {
+    &--left,
+    &--right {
       text-align: left;
 
       h2 {
@@ -45,37 +66,78 @@
       }
     }
 
-    &--right {
-      text-align: right;
+    @include media-breakpoint-up(lg) {
+      &--right {
+        text-align: right;
 
-      h2 {
-        left: 0;
-        top: 140px;
-        width: auto;
-        transform: translateY(-100%);
+        h2 {
+          left: 0;
+          top: 140px;
+          width: auto;
+          transform: translateY(-100%);
+        }
       }
     }
   }
 
-  &__onboarding {
+  &__onboarding,
+  &__activities,
+  &__community {
     display: flex;
     justify-content: flex-end;
+
+    @include media-breakpoint-down(md) {
+      margin-top: $extra-padding * 2;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__onboarding {
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__activities {
-    display: flex;
     justify-content: flex-start;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: -100px;
+    }
   }
 
   &__lessons {
     margin-top: 95px;
+    margin-bottom: 150px;
     position: relative;
+    justify-content: center;
 
     img {
-      width: 25%;
+      max-width: 25%;
 
-      &:nth-child(even) {
+      &:nth-child(2) {
         transform: translateY(75px);
+        @include media-breakpoint-down(sm) {
+          transform: translateY(30px);
+          margin: 0 -85px;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(75px * 2);
+        @include media-breakpoint-down(sm) {
+          transform: translateY(30px * 2);
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        max-width: 33.333%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-width: 43%;
       }
     }
 
@@ -90,7 +152,7 @@
 
       top: 50%;
       left: 50%;
-      transform: translate(-100%, -50%) translateX(100px);
+      transform: translate(-100%, -50%) translate(100px, 400px);
     }
   }
 }

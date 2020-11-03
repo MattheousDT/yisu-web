@@ -3,53 +3,16 @@
 .signup {
   &__container {
     position: relative;
-    width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  &__background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    background: {
-      image: url("/background.svg");
-      color: $blue;
-      position: center;
-      size: cover;
-    }
-    z-index: -1;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 1507px;
-      height: 1079px;
-      background-color: $dark-blue;
-      border-radius: 50%;
-    }
-
-    &::before {
-      transform: translate(-100%, -100%);
-      top: 214px;
-      left: 850px;
-    }
-
-    &::after {
-      transform: translate(100%, 100%);
-      bottom: 151px;
-      right: 919px;
-    }
+    padding-bottom: 30vh;
+    margin-top: -50px;
   }
 
   &__content {
     @include yisuCard;
+    position: relative;
     padding-top: 45px;
     margin: 0 $padding;
     text-align: center;
@@ -58,6 +21,19 @@
     p {
       margin-top: $less-padding;
       margin-bottom: $extra-padding;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1120px;
+      height: 1120px;
+      background-color: $dark-blue;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
     }
   }
 }

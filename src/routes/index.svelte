@@ -13,7 +13,7 @@
 <div class="container">
   <article class="row promo promo__header">
     <div class="col-12">
-      <img src="/img/logo.svg" alt="Yisu! logo" />
+      <img src="/img/logo.svg" draggable={false} alt="Yisu! logo" />
       <h3>The next generation language learning app</h3>
     </div>
   </article>
@@ -32,6 +32,7 @@
     <div class="col-12 col-lg-6 col-xl-7 promo__onboarding">
       <img
         src="/img/onboarding.png"
+        draggable={false}
         alt="Yisu mobile login page displayed in light and dark mode" />
     </div>
   </article>
@@ -50,9 +51,15 @@
     </div>
     <div class="col-12">
       <div class="row promo__lessons">
-        <img src="/img/topic.png" alt="Yisu topic page, teaching Greetings" />
-        <img src="/img/word.png" alt="Yisu word page" />
-        <img src="/img/word2.png" alt="Yisu alternative word page" />
+        <img
+          src="/img/topic.png"
+          draggable={false}
+          alt="Yisu topic page, teaching Greetings" />
+        <img src="/img/word.png" draggable={false} alt="Yisu word page" />
+        <img
+          src="/img/word2.png"
+          draggable={false}
+          alt="Yisu alternative word page" />
       </div>
     </div>
   </article>
@@ -60,6 +67,7 @@
     <div class="col-12 col-lg-6 col-xl-7 promo__activities">
       <img
         src="/img/activities.png"
+        draggable={false}
         alt="Yisu mobile login page displayed in light and dark mode" />
     </div>
     <div class="col-12 col-lg-6 col-xl-5">
@@ -90,6 +98,7 @@
     <div class="col-12 col-lg-6 col-xl-7 promo__community">
       <img
         src="/img/community.png"
+        draggable={false}
         alt="Yisu mobile login page displayed in light and dark mode" />
     </div>
   </article>
